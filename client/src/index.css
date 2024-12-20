@@ -1,0 +1,369 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "railextra";
+  src: url("./Font/LasAmericas_PERSONAL_USE_ONLY.otf") format("opentype"); /* Updated format */
+}
+
+@font-face {
+  font-family: "raillight";
+  src: url("./Font/Raleway-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "railregular";
+  src: url("./Font/Voguella.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "railmedium";
+  src: url("./Font/Voguella.ttf") format("truetype");
+}
+@font-face {
+  font-family: "robotto";
+  src: url("./Font/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "robottoblack";
+  src: url("./Font/Roboto-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "robottomed";
+  src: url("./Font/Roboto-Medium.ttf") format("truetype");
+}
+* {
+  --bg: #dbe8e7;
+  --lightblue: #c0f6f6;
+  --blue: #5ea5a6;
+  --darkblue: #175657;
+  --yellow: #f77f35;
+}
+
+.h1 {
+  font-family: robottoblack;
+  font-size: 4.5rem;
+  /* letter-spacing: 1px; */
+  line-height: 84px;
+  font-weight: 700;
+  color: var(--darkblue);
+}
+
+@media (max-width: 1000px) {
+  .h1 {
+    font-size: 2.5rem;
+    line-height: 38px;
+  }
+}
+
+.homepagetop {
+  padding-top: 3%;
+  background-color: var(--lightblue);
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-image: linear-gradient(to bottom, #c0f6f6 50%, #5ea5a6 );
+
+  /* border: 2px solid green; */
+}
+
+.backgroundimages {
+  background-image: url(/client//public/dryer.png) !important;
+}
+
+.homepagetopleft {
+  width: 35vw;
+  /* border: 2px solid green; */
+  text-align: left;
+  margin-right: 9%;
+}
+
+.btn {
+  background-color: var(--yellow);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1.3%;
+  padding-bottom: 1.3%;
+  border-radius: 10px;
+  margin-top: 3%;
+  font-family: robottomed;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.larger {
+  align-self: center;
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.homepagetopimage {
+  width: 30%;
+  height: 90%;
+  /* border: 2px solid red !important; */
+  object-fit: cover;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 2.5em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: 1em;
+  fill: #03a9f4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.github {
+  margin-top: -0.6em;
+  margin-left: 2.3em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.discord {
+  margin-top: -0.9em;
+  margin-left: 1em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03a9f4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+/* btn  */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  --color-text: #ffffff;
+  --color-background: #f77f35;
+  --color-outline: #ff145b80;
+  --color-shadow: #00000080;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: 1s;
+  border-radius: 100px;
+  box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+
+.btn-content:hover,
+.btn-content:focus {
+  transition: 0.5s;
+  -webkit-animation: btn-content 1s;
+  animation: btn-content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+  box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+.btn-content .icon-arrow {
+  transition: 0.5s;
+  margin-right: 0px;
+  transform: scale(0.6);
+}
+
+.btn-content:hover .icon-arrow {
+  transition: 0.5s;
+  margin-right: 25px;
+}
+
+.icon-arrow {
+  width: 20px;
+  margin-left: 15px;
+  position: relative;
+  top: 6%;
+}
+
+/* SVG */
+#arrow-icon-one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@media(max-width:767px) {
+  .btn-content {
+  font-size: 12px;
+  padding: 1px 25px;
+  }
+  .icon-arrow {
+    width: 10px;
+    margin-right: 5px;
+    padding-bottom: 7px;
+  }
+
+}
+/* SVG animations */
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: var(--color-background);
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+/* Button animations */
+@-webkit-keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+@keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+/* btn  */

@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'railextra';
+    src: url('./Font/LasAmericas_PERSONAL_USE_ONLY.otf') format('opentype'); /* Updated format */
+  }
+  
+  @font-face {
+    font-family: 'raillight';
+    src: url('./Font/Raleway-Medium.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'railregular';
+    src: url('./Font/Voguella.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'railmedium';
+    src: url('./Font/Voguella.ttf') format('truetype');
+  }
+*{
+    background-color: ;
+    --bg:#dbe8e7;
+    --lightblue: #c0f6f6;
+    --blue: #5ea5a6;
+    --darkblue: #175657;
+    --yellow:#f77f35;
+    padding: 0;
+    margin: 0;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container80{
+    width: 100%;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerrr{
+    width: 100%;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.btn{
+    background-color: var(--yellow);
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    margin-top: 3%;
+    font-family: railmedium;
+    transition: all 0.2s ease-in-out;
+}
+.logout{
+    background-color: var(--yellow);
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-radius: 10px;
+    margin-top: 3%;
+    font-family: railmedium;
+    transition: all 0.2s ease-in-out;
+    font-size: 22px;
+}
+
+.larger{
+    align-self: center;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+.logout:hover{
+    transform: scale(1.1);
+    background-color: red;
+    color: white;
+}
+
+.backgroundimg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .backgroundimg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('2851.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1.4px);
+    z-index: -1; /* Ensure the background is behind the content */
+  }
+  
+  
